@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIA'O | Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"light"}catch(e){}</script>
+</head>
+<body class="">
+<header class="nav"><a class="logo" href="index.html">FIA'O</a><div class="nav-right"><ul><li><a href="index.html">Home</a></li><li><a href="credit.html">Credit</a></li><li><a href="products.html">Products</a></li><li><a href="clients.html">Clients</a></li><li><a href="reports.html">Reports</a></li><li><a href="contact.html">Contact</a></li></ul><button class="tool" id="lang" title="Idioma / Language">ES</button><button class="tool" id="theme" title="Dark mode">🌙</button></div></header>
+<main class="page-light"><div class="dash">
+<div class="dash-head"><div><small class="eyebrow">FIA'O</small><h1 id="welcome">Welcome,</h1><p class="sub">Everything you need to manage your business is right here.</p></div>
+<div class="user-chip" id="userChip"><span class="uav" id="uAv">A</span><span class="uinfo"><b id="uName"></b><small id="uBiz"></small></span><span>⌄</span>
+<div class="user-menu" id="uMenu" hidden><button type="button" id="logout">Log out</button></div></div></div>
+<div class="grid dgrid">
+<a class="dcard" href="clients.html"><span class="dico">👥</span><span><b>Customers</b><small>Manage customer information and debts.</small></span></a>
+<a class="dcard" href="products.html"><span class="dico">📦</span><span><b>Products</b><small>Manage inventory and product prices.</small></span></a>
+<a class="dcard" href="credit.html"><span class="dico">💳</span><span><b>Credits &amp; Payments</b><small>Register credits, payments and customer balances.</small></span></a>
+<a class="dcard" href="reports.html"><span class="dico">📊</span><span><b>Reports</b><small>View statistics and financial reports.</small></span></a></div>
+<h3 style="margin:30px 0 12px">Quick Statistics</h3>
+<div class="grid dstats">
+<div class="dcard col"><span class="dico sm">👥</span><b id="stC">0</b><small class="slabel">Customers</small></div>
+<div class="dcard col"><span class="dico sm">📦</span><b id="stP">0</b><small class="slabel">Products</small></div>
+<div class="dcard col"><span class="dico sm">💳</span><b id="stCr">B/. 0.00</b><small class="slabel">Credits</small></div>
+<div class="dcard col"><span class="dico sm">💵</span><b id="stPay">B/. 0.00</b><small class="slabel">Payments Today</small></div></div>
+<div class="dcard" style="display:block;margin-top:28px"><h3>Recent Activity</h3><div id="act"></div></div>
+</div></main>
+<script src="script.js"></script>
+</body>
+</html>

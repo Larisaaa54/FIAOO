@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIA'O | Clients</title>
+<link rel="stylesheet" href="style.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"light"}catch(e){}</script>
+</head>
+<body class="">
+<header class="nav"><a class="logo" href="index.html">FIA'O</a><div class="nav-right"><ul><li><a href="index.html">Home</a></li><li><a href="credit.html">Credit</a></li><li><a href="products.html">Products</a></li><li><a href="clients.html" class='active'>Clients</a></li><li><a href="reports.html">Reports</a></li><li><a href="contact.html">Contact</a></li></ul><button class="tool" id="lang" title="Idioma / Language">ES</button><button class="tool" id="theme" title="Dark mode">🌙</button></div></header>
+<main class="page-light"><div class="container">
+<h1>Clients</h1><p class="sub">Search and manage your customers.</p>
+<div class="card"><input placeholder="Search client by name or phone...">
+<div class="pills"><button class="on" data-f="all">All</button><button data-f="ok">On Time</button><button data-f="pending">Pending</button><button data-f="over">Overdue</button></div></div><br>
+<table id="clients"><thead><tr><th>Client</th><th>Purchases</th><th>Pending debt</th><th>Status</th><th>Actions</th></tr></thead><tbody>
+<tr data-s="over"><td><b>Carlos Ruiz</b><br><small>6305-2345</small></td><td>9</td><td>B/. 62.50</td><td><span class="badge b-over">Overdue</span></td><td><a href="credit.html">View detail →</a></td></tr>
+<tr data-s="over"><td><b>Ana Martínez</b><br><small>6602-3381</small></td><td>5</td><td>B/. 45.00</td><td><span class="badge b-over">Overdue</span></td><td><a href="credit.html">View detail →</a></td></tr>
+<tr data-s="pending"><td><b>Ramón Batista</b><br><small>6501-1122</small></td><td>7</td><td>B/. 35.00</td><td><span class="badge b-pending">Pending</span></td><td><a href="credit.html">View detail →</a></td></tr>
+<tr data-s="ok"><td><b>Luis Camaño</b><br><small>6700-9988</small></td><td>12</td><td>B/. 0.00</td><td><span class="badge b-ok">On Time</span></td><td><a href="credit.html">View detail →</a></td></tr>
+</tbody></table>
+<div class="reminder"><span>💬 <b>Automatic Reminder Sent</b><br><small>WhatsApp to Ramón Batista: "Hello Ramón, you have B/. 35.00 pending in Minisúper Doña Chela. See you soon!"</small></span><button class="btn" style="background:var(--green);color:#fff">✓ Sent</button></div>
+</div></main>
+<script src="script.js"></script>
+</body>
+</html>

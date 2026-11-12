@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIA'O | Reports</title>
+<link rel="stylesheet" href="style.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"light"}catch(e){}</script>
+</head>
+<body class="">
+<header class="nav"><a class="logo" href="index.html">FIA'O</a><div class="nav-right"><ul><li><a href="index.html">Home</a></li><li><a href="credit.html">Credit</a></li><li><a href="products.html">Products</a></li><li><a href="clients.html">Clients</a></li><li><a href="reports.html" class='active'>Reports</a></li><li><a href="contact.html">Contact</a></li></ul><button class="tool" id="lang" title="Idioma / Language">ES</button><button class="tool" id="theme" title="Dark mode">🌙</button></div></header>
+<main class="page-light"><div class="container">
+<h1>Reports</h1><p class="sub">Credit activity and payment summaries.</p>
+<div class="card"><div class="row" style="align-items:end"><div><label>From</label><input type="date" value="2026-07-01"></div><div><label>To</label><input type="date" value="2026-07-31"></div>
+<div><label>Customer</label><select><option>Luis Camaño</option><option>All</option></select></div><button class="btn btn-brown">Apply Filters</button></div></div><br>
+<div class="grid g3">
+<div class="card white kpi"><small>Total Active Credit</small><b>$1,450.00</b><em>+8.4% from last month</em></div>
+<div class="card white kpi"><small>Collected This Month</small><b>$3,120.50</b><em>+12.1% efficiency</em></div>
+<div class="card white kpi"><small>Pending Balances</small><b>$340.00</b><em>-3 accounts overdue</em></div>
+<div class="card white kpi"><small>Total Customers</small><b>48</b><em>+5 new this month</em></div></div><br>
+<div class="grid" style="grid-template-columns:1.5fr 1fr">
+<div class="card white"><h3>Credit Activity &amp; Payments Flow</h3><div class="bars"><div><i class="y" style="height:55%"></i><i class="g" style="height:50%"></i></div><div><i class="y" style="height:70%"></i><i class="g" style="height:75%"></i></div><div><i class="y" style="height:60%"></i><i class="g" style="height:65%"></i></div><div><i class="y" style="height:90%"></i><i class="g" style="height:80%"></i></div></div><small>Week 1 · Week 2 · Week 3 · Week 4 — 🟧 Credit Issued 🟩 Payments Received 🟥 Overdue</small></div>
+<div class="card white"><h3>Payment Status Breakdown</h3>
+<div class="bar-row">On Time (75%) <span style="float:right">$2,340</span><div class="progress"><i style="width:75%;background:var(--green)"></i></div></div>
+<div class="bar-row">Pending (17%) <span style="float:right">$540</span><div class="progress"><i style="width:17%;background:#f1b73a"></i></div></div>
+<div class="bar-row">Overdue (8%) <span style="float:right">$250</span><div class="progress"><i style="width:8%"></i></div></div></div></div><br>
+<div class="card white"><h3>Recent Credit Transactions</h3><table><thead><tr><th>Customer</th><th>Description</th><th>Amount</th><th>Date</th><th>Status</th></tr></thead><tbody>
+<tr><td>Maria Gomez</td><td>Grocery items &amp; supplies</td><td>$45.00</td><td>2026-07-28</td><td><span class="badge b-ok">On Time</span></td></tr>
+<tr><td>Carlos Mendoza</td><td>Weekly hardware credit</td><td>$120.00</td><td>2026-07-25</td><td><span class="badge b-pending">Pending</span></td></tr>
+<tr><td>Ana Ruiz</td><td>Bakery stock order</td><td>$85.50</td><td>2026-07-18</td><td><span class="badge b-over">Overdue</span></td></tr></tbody></table></div>
+</div></main>
+<script src="script.js"></script>
+</body>
+</html>

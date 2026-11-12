@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIA'O | Credit</title>
+<link rel="stylesheet" href="style.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"light"}catch(e){}</script>
+</head>
+<body class="">
+<header class="nav"><a class="logo" href="index.html">FIA'O</a><div class="nav-right"><ul><li><a href="index.html">Home</a></li><li><a href="credit.html" class='active'>Credit</a></li><li><a href="products.html">Products</a></li><li><a href="clients.html">Clients</a></li><li><a href="reports.html">Reports</a></li><li><a href="contact.html">Contact</a></li></ul><button class="tool" id="lang" title="Idioma / Language">ES</button><button class="tool" id="theme" title="Dark mode">🌙</button></div></header>
+<main class="red-bg"><div class="container">
+<h1>Debts &amp; Payments</h1><p class="sub">Manage customer debts, register payments, and track balances easily.</p>
+<div class="grid g-credit">
+<section class="card"><label>Select customer</label>
+<select><option>Ramón Batista</option><option>Carlos Gómez</option><option>Ana Martínez</option></select>
+<div class="customer"><div class="avatar">R</div><b>Ramón Batista</b></div>
+<div class="row"><div class="stat"><small>Current Debt</small><b>B/. 35.00</b></div><div class="stat"><small>Credit Limit</small><b>B/. 100.00</b></div></div>
+<div class="progress"><i style="width:35%"></i></div>
+<label style="display:flex;justify-content:space-between">Automatic Blocking <input type="checkbox" checked style="width:auto"></label></section>
+<section class="card"><h3>Debt History</h3>
+<div class="item"><span>Milk (2) Fiado<br><small>Oct 14</small></span><span><b class="plus">+B/. 8.00</b><br><span class="badge b-pending">Pending</span></span></div>
+<div class="item"><span>Abono<br><small>Oct 12</small></span><span><b class="minus">-B/. 15.00</b><br><span class="badge b-paid">Paid</span></span></div>
+<div class="item"><span>Rice (1) Fiado<br><small>Oct 10</small></span><span><b class="plus">+B/. 12.00</b><br><span class="badge b-pending">Pending</span></span></div>
+<div class="item"><span>Bread (3) Fiado<br><small>Oct 8</small></span><span><b class="plus">+B/. 6.00</b><br><span class="badge b-paid">Paid</span></span></div></section>
+<section class="card"><h3>Recent Activity</h3>
+<div class="item"><span>Ramón Batista<br><small>Paid B/. 15.00</small></span><small>Today</small></div>
+<div class="item"><span>Carlos Gómez<br><small>New debt: B/. 12.50</small></span><small>Yesterday</small></div>
+<div class="item"><span>Ana Martínez<br><small>Payment received: B/. 20.00</small></span><small>Today</small></div></section>
+<section class="card"><h3>Register Payment</h3>
+<form><label>Payment amount</label><input type="number" placeholder="B/. 0.00">
+<label>Payment type</label><div class="row"><button type="button" class="btn btn-red">Partial Payment</button><button type="button" class="btn btn-light">Full Payment</button></div>
+<div class="row" style="margin-top:14px"><button class="btn btn-yellow">Register Payment</button><button type="button" class="btn btn-light">Mark as Paid</button></div></form></section>
+<section class="card"><h3>Debt Overview</h3><div class="row"><div class="stat"><small>Outstanding Debt</small><b>B/. 97.50</b></div><div class="stat"><small>Payments Today</small><b>B/. 150.00</b></div></div>
+<div class="row" style="margin-top:12px"><div class="stat"><small>Customers with Debt</small><b>2</b></div><div class="stat"><small>Overdue</small><b>4</b></div></div></section>
+</div></div></main><footer><span>FIA'O</span><span>© 2026 FIA'O. All rights reserved.</span></footer>
+<script src="script.js"></script>
+</body>
+</html>

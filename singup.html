@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIA'O | Sign up</title>
+<link rel="stylesheet" href="style.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"light"}catch(e){}</script>
+</head>
+<body class="">
+<header class="nav"><a class="logo" href="index.html">FIA'O</a><div class="nav-right"><ul><li><a href="index.html">Home</a></li><li><a href="credit.html">Credit</a></li><li><a href="products.html">Products</a></li><li><a href="clients.html">Clients</a></li><li><a href="reports.html">Reports</a></li><li><a href="contact.html">Contact</a></li></ul><button class="tool" id="lang" title="Idioma / Language">ES</button><button class="tool" id="theme" title="Dark mode">🌙</button></div></header>
+<main class="auth"><div><b>FIAO</b><h1>Sign up for free</h1><p>Create your account on FIAO and start managing your credit sales easily, securely, and in an organized way.</p>
+<div class="feature"><i>⚡</i><div><b>Fast &amp; Easy</b><br><small>Create your account in just a few minutes</small></div></div><div class="feature"><i>🛡</i><div><b>Secure</b><br><small>We protect your business and customer information</small></div></div></div>
+<form class="auth-card" id="signupForm" novalidate><h2>Create your account</h2><small>Complete the form to get started</small>
+<label>Full name</label><input name="name" placeholder="Add your name" autocomplete="name">
+<label>Email address</label><input name="email" type="email" placeholder="Add your email" autocomplete="email">
+<label>Phone number</label><input name="phone" type="tel" placeholder="Add your number" autocomplete="tel">
+<label>Business name</label><input name="business" placeholder="Your business">
+<label>Password</label><div class="row"><input id="pw1" name="password" type="password" placeholder="At least 6 characters" autocomplete="new-password"><button type="button" class="btn btn-light" style="flex:0" data-eye="pw1">👁</button></div>
+<label>Confirm password</label><div class="row"><input id="pw2" name="password2" type="password" placeholder="Confirm your password" autocomplete="new-password"><button type="button" class="btn btn-light" style="flex:0" data-eye="pw2">👁</button></div>
+<label style="text-transform:none;display:flex;gap:8px;align-items:center;margin-top:14px"><input type="checkbox" name="terms" style="width:auto"> I accept the terms and conditions</label><br>
+<button class="btn btn-red btn-block">Create account</button><p class="msg" id="msg"></p><p style="margin-top:12px;text-align:center"><small>Already have an account? <a href="login.html">Log in</a></small></p></form></main>
+<script src="script.js"></script>
+</body>
+</html>

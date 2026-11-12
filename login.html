@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIA'O | Log in</title>
+<link rel="stylesheet" href="style.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"light"}catch(e){}</script>
+</head>
+<body class="">
+<header class="nav"><a class="logo" href="index.html">FIA'O</a><div class="nav-right"><ul><li><a href="index.html">Home</a></li><li><a href="credit.html">Credit</a></li><li><a href="products.html">Products</a></li><li><a href="clients.html">Clients</a></li><li><a href="reports.html">Reports</a></li><li><a href="contact.html">Contact</a></li></ul><button class="tool" id="lang" title="Idioma / Language">ES</button><button class="tool" id="theme" title="Dark mode">🌙</button></div></header>
+<main class="auth"><div><b>FIAO</b><h1>We are innovation with purpose</h1><p>Technology at the service of small businesses</p><div class="feature"><i>▥</i><div><b>Total Control</b><br><small>Manage your inventory, sales, and debts all from one place</small></div></div><div class="feature"><i>🛡</i><div><b>More Security</b><br><small>Digitize the credit and keep track of your customers safely</small></div></div><div class="feature"><i>♥</i><div><b>Better Relationships</b><br><small>Keep your clients informed and on time</small></div></div></div>
+<form class="auth-card" id="loginForm" novalidate><h2>Log In</h2><small>Enter your credentials</small>
+<label>Email</label><input name="email" type="email" placeholder="you@email.com" autocomplete="email">
+<label>Password</label><div class="row"><input id="pw" name="password" type="password" autocomplete="current-password"><button type="button" class="btn btn-light" style="flex:0" data-eye="pw">👁</button></div>
+<p style="margin:10px 0"><a href="#">You forgot your password?</a></p>
+<label style="text-transform:none;display:flex;gap:8px;align-items:center"><input type="checkbox" id="robot" style="width:auto"> I'm not a robot</label><br>
+<button class="btn btn-red btn-block">Log in</button><p class="msg" id="msg"></p><p style="margin-top:12px;text-align:center"><small>No account? <a href="signup.html">Sign up</a></small></p></form></main>
+<script src="script.js"></script>
+</body>
+</html>
